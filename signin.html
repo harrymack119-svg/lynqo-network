@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — Lynqo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .auth-input.has-toggle { padding-right: 3rem; }
+    </style>
+</head>
+<body class="auth-layout">
+
+    <div id="popup" style="position:fixed;top:20px;left:20px;z-index:9999;background:#fff;border-radius:12px;padding:20px 24px;box-shadow:0 8px 30px rgba(0,0,0,.15);max-width:300px;font-family:Arial,sans-serif;transform:translate(-110%,-110%);opacity:0;transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .3s ease">
+        <button onclick="closePopup()" style="position:absolute;top:6px;right:6px;background:none;border:none;cursor:pointer;color:#94a3b8;font-size:14px;padding:2px 4px;line-height:1;border-radius:3px">✕</button>
+        <p id="msg_title" style="margin:0 0 4px;font-size:15px;font-weight:bold;color:#1e293b"></p>
+        <p id="msg" style="margin:0;font-size:13px;color:#64748b;line-height:1.5"></p>
+    </div>
+
+    <!-- Left Panel - Branding -->
+    <div class="auth-brand-panel">
+        <div class="auth-brand-decor-1"></div>
+        <div class="auth-brand-decor-2"></div>
+        <div class="auth-brand-grid"></div>
+
+        <div class="auth-brand-content">
+            <!-- Logo -->
+            <a href="index.html" class="auth-brand-logo">
+                <div class="auth-brand-logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="auth-brand-logo-text">Lynqo</span>
+            </a>
+
+            <h2 class="auth-brand-title">Welcome back to your digital store</h2>
+            <p class="auth-brand-desc">Check your sales, manage products, and connect with your customers — all from your Lynqo dashboard.</p>
+
+            <div class="auth-stats-grid">
+                <div class="auth-stat-card">
+                    <div class="auth-stat-value">$12M+</div>
+                    <div class="auth-stat-label">Earned by creators</div>
+                </div>
+                <div class="auth-stat-card">
+                    <div class="auth-stat-value">12K+</div>
+                    <div class="auth-stat-label">Active sellers</div>
+                </div>
+                <div class="auth-stat-card">
+                    <div class="auth-stat-value">250K+</div>
+                    <div class="auth-stat-label">Products sold</div>
+                </div>
+                <div class="auth-stat-card">
+                    <div class="auth-stat-value">99.9%</div>
+                    <div class="auth-stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Panel - Form -->
+    <div class="auth-form-panel">
+        <div class="auth-form-wrapper">
+            <!-- Mobile Logo -->
+            <a href="index.html" class="auth-mobile-logo">
+                <div class="auth-mobile-logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="auth-mobile-logo-text">Lynqo</span>
+            </a>
+
+            <div class="auth-header">
+                <h1 class="auth-title">Welcome back</h1>
+                <p class="auth-subtitle">Sign in to your Lynqo account to continue.</p>
+            </div>
+
+            <!-- Divider -->
+            <!-- <div class="auth-divider">
+                <div class="auth-divider-line"></div>
+                <span class="auth-divider-text">continue with email</span>
+            </div> -->
+
+            <form id="signin" class="auth-form">
+
+                <div class="auth-field">
+                    <label for="email">Email Address</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="mail" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required class="auth-input">
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <div class="auth-field-label-row">
+                        <label for="password">Password</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="lock" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required class="auth-input has-toggle">
+                        <button type="button" class="auth-toggle-password" onclick="togglePassword('password', this)">
+                            <i data-lucide="eye" style="width:16px;height:16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-remember-row">
+                    <div class="remember-group">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="auth-submit">
+                    Sign In
+                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </button>
+            </form>
+
+            <p class="auth-footer-link">
+                Don't have an account? <a href="signup.html">Create one for free</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="signin.js"></script>
+</body>
+</html>

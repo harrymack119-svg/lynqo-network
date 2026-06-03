@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — Lynqo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .auth-input.has-toggle { padding-right: 3rem; }
+    </style>
+</head>
+<body class="auth-layout">
+
+    <div id="popup-backdrop" onclick="closePopup()" style="position:fixed;inset:0;background:rgba(15,23,42,0.35);backdrop-filter:blur(2px);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:9998"></div>
+    <div id="popup" style="position:fixed;top:50%;left:50%;z-index:9999;background:#fff;border-radius:18px;padding:24px;box-shadow:0 24px 80px rgba(15,23,42,.18);width:min(92vw,360px);font-family:Arial,sans-serif;transform:translate(-50%, -50%) scale(0.95);opacity:0;transition:opacity .25s ease,transform .3s ease">
+        <button onclick="closePopup()" style="position:absolute;top:12px;right:12px;background:none;border:none;cursor:pointer;color:#94a3b8;font-size:16px;padding:4px;line-height:1;border-radius:4px">✕</button>
+        <p id="msg_title" style="margin:0 0 8px;font-size:16px;font-weight:700;color:#0f172a"></p>
+        <p id="msg" style="margin:0;font-size:14px;color:#334155;line-height:1.6"></p>
+    </div>
+
+    <!-- Left Panel - Branding -->
+    <div class="auth-brand-panel">
+        <div class="auth-brand-decor-1"></div>
+        <div class="auth-brand-decor-2"></div>
+        <div class="auth-brand-grid"></div>
+
+        <div class="auth-brand-content">
+            <!-- Logo -->
+            <a href="index.html" class="auth-brand-logo">
+                <div class="auth-brand-logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="auth-brand-logo-text">Lynqo</span>
+            </a>
+
+            <h2 class="auth-brand-title">Start selling your digital products today</h2>
+            <p class="auth-brand-desc">Join 12,000+ creators who use Lynqo to sell ebooks, courses, templates, software, and more.</p>
+
+            <div class="auth-testimonial">
+                <p class="auth-testimonial-text">"I made my first sale within 10 minutes of signing up. Lynqo is hands down the easiest platform I've ever used."</p>
+                <div class="auth-testimonial-author">
+                    <img src="http://static.photos/people/200x200/30" class="auth-testimonial-avatar" alt="">
+                    <div>
+                        <div class="auth-testimonial-name">Sophia Williams</div>
+                        <div class="auth-testimonial-role">Template Designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Panel - Form -->
+    <div class="auth-form-panel">
+        <div class="auth-form-wrapper">
+            <!-- Mobile Logo -->
+            <a href="index.html" class="auth-mobile-logo">
+                <div class="auth-mobile-logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="auth-mobile-logo-text">Lynqo</span>
+            </a>
+
+            <div class="auth-header">
+                <h1 class="auth-title">Create your account</h1>
+                <p class="auth-subtitle">Start selling for free. No credit card required.</p>
+            </div>
+
+            <!-- <div class="auth-divider">
+                <div class="auth-divider-line"></div>
+                <span class="auth-divider-text">continue with email</span>
+            </div> -->
+
+
+            <form id="signup" class="auth-form">
+
+                <div class="auth-field">
+                    <label for="fullName">First Name</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="user" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="text" name="firstname" id="firstname" placeholder="John" required class="auth-input">
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="fullName">Last Name</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="user" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="text" name="lastname" id="lastname" placeholder="Doe" required class="auth-input">
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="fullName">Username</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="user" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="text" name="username" id="username" placeholder="Johnny" required class="auth-input">
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="email">Email Address</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="mail" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required class="auth-input">
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="password">Password</label>
+                    <div class="auth-input-wrapper">
+                        <div class="auth-input-icon">
+                            <i data-lucide="lock" style="width:16px;height:16px;"></i>
+                        </div>
+                        <input type="password" name="password" id="password" placeholder="Min. 8 characters" required minlength="8" class="auth-input has-toggle" oninput="checkPasswordStrength(this.value)">
+                        <button type="button" class="auth-toggle-password" onclick="togglePassword('password', this)">
+                            <i data-lucide="eye" style="width:16px;height:16px;"></i>
+                        </button>
+                    </div>
+
+                    <!-- Password Strength -->
+                    <div class="strength-bars">
+                        <div class="strength-bar-bg"><div id="str1" class="strength-bar-fill"></div></div>
+                        <div class="strength-bar-bg"><div id="str2" class="strength-bar-fill"></div></div>
+                        <div class="strength-bar-bg"><div id="str3" class="strength-bar-fill"></div></div>
+                        <div class="strength-bar-bg"><div id="str4" class="strength-bar-fill"></div></div>
+                    </div>
+                    <p id="strengthText" class="strength-text"></p>
+                </div>
+
+                <input name="currency" id="currency" placeholder="Currency" style="display: none;">                
+                <input name="location" id="location" placeholder="Location" style="display: none;">
+
+                <div class="auth-checkbox-row">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" id="submitBtn" class="auth-submit">
+                    Create Account
+                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </button>
+            </form>
+
+            <p class="auth-footer-link">
+                Already have an account? <a href="signin.html">Sign in</a>
+            </p>
+        </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

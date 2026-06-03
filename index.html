@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynqo — Sell Digital Products Effortlessly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg> -->
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="logo-text">Lynqo</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="desktop-nav">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+
+            <!-- Desktop Auth Buttons -->
+            <div class="desktop-auth">
+                <a href="signin.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-cta">Get Started Free</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i data-lucide="menu" style="width:24px;height:24px;"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu" style="position:fixed;inset:0;z-index:60;background:#fff;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:1rem;border-bottom:1px solid #f3f4f6;">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg> -->
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="logo-text">Lynqo</span>
+            </a>
+            <button id="closeMobileMenu" style="padding:0.5rem;border-radius:0.5rem;background:none;border:none;cursor:pointer;">
+                <i data-lucide="x" style="width:24px;height:24px;"></i>
+            </button>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:1.5rem;gap:1rem;">
+            <a href="#features" class="mobile-link" style="font-size:1.125rem;font-weight:500;color:#374151;padding:0.75rem 0;border-bottom:1px solid #f3f4f6;">Features</a>
+            <a href="#how-it-works" class="mobile-link" style="font-size:1.125rem;font-weight:500;color:#374151;padding:0.75rem 0;border-bottom:1px solid #f3f4f6;">How It Works</a>
+            <a href="#pricing" class="mobile-link" style="font-size:1.125rem;font-weight:500;color:#374151;padding:0.75rem 0;border-bottom:1px solid #f3f4f6;">Pricing</a>
+            <a href="#testimonials" class="mobile-link" style="font-size:1.125rem;font-weight:500;color:#374151;padding:0.75rem 0;border-bottom:1px solid #f3f4f6;">Testimonials</a>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1rem;">
+                <a href="signin.html" style="text-align:center;font-size:0.875rem;font-weight:500;color:#374151;padding:0.75rem 1.25rem;border-radius:0.75rem;border:1px solid #e5e7eb;transition:background 0.3s;">Log In</a>
+                <a href="signup.html" style="text-align:center;font-size:0.875rem;font-weight:600;color:#fff;background:linear-gradient(to right,#4f46e5,#9333ea);padding:0.75rem 1.25rem;border-radius:0.75rem;box-shadow:0 4px 6px -1px rgba(99,102,241,0.25);">Get Started Free</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section hero-glow grid-bg">
+        <div class="container-custom">
+            <div style="text-align:center;max-width:56rem;margin:0 auto;">
+                <!-- Badge -->
+                <div class="fade-up hero-badge">
+                    <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
+                    <span>Now with AI-powered product recommendations</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="fade-up hero-headline">
+                    Sell digital products.<br>
+                    <span class="gradient-text">Zero friction.</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="fade-up hero-subheadline">
+                    Lynqo gives creators, developers, and entrepreneurs the simplest way to sell ebooks, courses, templates, software, and more — all from one beautiful storefront.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="fade-up cta-group">
+                    <a href="signup.html" class="btn-shine cta-primary">
+                        Start Selling for Free
+                        <i data-lucide="arrow-right" style="width:20px;height:20px;"></i>
+                    </a>
+                    <a href="#how-it-works" class="cta-secondary">
+                        <i data-lucide="play-circle" style="width:20px;height:20px;color:#6366f1;"></i>
+                        Watch Demo
+                    </a>
+                </div>
+
+                <!-- Social Proof -->
+                <div class="fade-up social-proof">
+                    <div class="avatar-stack">
+                        <img src="http://static.photos/people/200x200/1" alt="">
+                        <img src="http://static.photos/people/200x200/2" alt="">
+                        <img src="http://static.photos/people/200x200/3" alt="">
+                        <img src="http://static.photos/people/200x200/4" alt="">
+                        <img src="http://static.photos/people/200x200/5" alt="">
+                    </div>
+                    <span>Trusted by <strong style="color:#111827;">12,000+</strong> creators worldwide</span>
+                </div>
+            </div>
+
+            <!-- Hero Image / Dashboard Preview -->
+            <div class="fade-up dashboard-preview">
+                <div class="dashboard-fade"></div>
+                <div class="dashboard-card">
+                    <!-- Mock Browser Bar -->
+                    <div class="browser-bar">
+                        <div class="browser-dots">
+                            <span style="background:#f87171;"></span>
+                            <span style="background:#fbbf24;"></span>
+                            <span style="background:#4ade80;"></span>
+                        </div>
+                        <div class="browser-url">app.lynqo.co/dashboard</div>
+                    </div>
+                    <!-- Mock Dashboard -->
+                    <div class="dashboard-content">
+                        <div class="stat-grid">
+                            <!-- Stat Cards -->
+                            <div class="stat-card revenue">
+                                <div class="stat-label revenue">
+                                    <i data-lucide="dollar-sign" style="width:16px;height:16px;"></i>
+                                    Revenue
+                                </div>
+                                <div class="stat-value stat-counter">$48,290</div>
+                                <div class="stat-change">↑ 24.5% this month</div>
+                            </div>
+                            <div class="stat-card orders">
+                                <div class="stat-label orders">
+                                    <i data-lucide="shopping-bag" style="width:16px;height:16px;"></i>
+                                    Orders
+                                </div>
+                                <div class="stat-value stat-counter">1,847</div>
+                                <div class="stat-change">↑ 18.2% this month</div>
+                            </div>
+                            <div class="stat-card customers">
+                                <div class="stat-label customers">
+                                    <i data-lucide="users" style="width:16px;height:16px;"></i>
+                                    Customers
+                                </div>
+                                <div class="stat-value stat-counter">3,412</div>
+                                <div class="stat-change">↑ 12.8% this month</div>
+                            </div>
+                        </div>
+                        <!-- Recent Orders -->
+                        <div class="recent-orders">
+                            <div class="recent-orders-title">Recent Orders</div>
+                            <div>
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-icon brand"><i data-lucide="file-text" style="width:16px;height:16px;color:#4f46e5;"></i></div>
+                                        <div><div class="order-name">UI Design Kit Pro</div><div class="order-customer">Sarah Johnson</div></div>
+                                    </div>
+                                    <div class="order-price">$49.00</div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-icon purple"><i data-lucide="code" style="width:16px;height:16px;color:#9333ea;"></i></div>
+                                        <div><div class="order-name">React Boilerplate</div><div class="order-customer">Mark Chen</div></div>
+                                    </div>
+                                    <div class="order-price">$29.00</div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-icon emerald"><i data-lucide="book-open" style="width:16px;height:16px;color:#059669;"></i></div>
+                                        <div><div class="order-name">Marketing Playbook</div><div class="order-customer">Emma Davis</div></div>
+                                    </div>
+                                    <div class="order-price">$19.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos-section">
+        <div class="container-custom">
+            <p class="logos-title">Trusted by creators at</p>
+            <div class="logos-grid">
+                <div>Dodo Payments</div>
+                <div>Grey</div>
+                <div>Vercel</div>
+                <div>Flutterwave</div>
+                <div>Lemon Squeezy</div>
+                <div>Airtable</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container-custom">
+            <div style="text-align:center;max-width:48rem;margin:0 auto 4rem;">
+                <div class="fade-up section-badge brand">
+                    <i data-lucide="layers" style="width:16px;height:16px;"></i>
+                    Features
+                </div>
+                <h2 class="fade-up section-title">Everything you need to sell digital</h2>
+                <p class="fade-up section-desc">From checkout to delivery, Lynqo handles every step so you can focus on creating amazing products.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="fade-up feature-card">
+                    <div class="feature-icon brand">
+                        <i data-lucide="zap" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Instant Setup</h3>
+                    <p class="feature-desc">Go from sign-up to your first sale in under 5 minutes. No coding, no complex configurations required.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="fade-up feature-card">
+                    <div class="feature-icon purple">
+                        <i data-lucide="store" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Beautiful Storefronts</h3>
+                    <p class="feature-desc">Customizable, conversion-optimized product pages that make your digital products shine.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="fade-up feature-card">
+                    <div class="feature-icon emerald">
+                        <i data-lucide="credit-card" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Global Payments</h3>
+                    <p class="feature-desc">Accept payments in USD and other available currencies with Grey, IBAN, and more. Get paid instantly.</p>
+                </div>
+                <!-- Feature 4 -->
+                <!-- <div class="fade-up feature-card">
+                    <div class="feature-icon amber">
+                        <i data-lucide="shield-check" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">License Keys</h3>
+                    <p class="feature-desc">Auto-generate and deliver unique license keys for software products with tamper-proof security.</p>
+                </div> -->
+                <!-- Feature 5 -->
+                <div class="fade-up feature-card">
+                    <div class="feature-icon rose">
+                        <i data-lucide="bar-chart-3" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Deep Analytics</h3>
+                    <p class="feature-desc">Track revenue, conversion rates, customer behavior, and more with real-time dashboards.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="fade-up feature-card">
+                    <div class="feature-icon cyan">
+                        <i data-lucide="mail" style="width:24px;height:24px;"></i>
+                    </div>
+                    <h3 class="feature-title">Email Marketing</h3>
+                    <p class="feature-desc">Built-in email sequences, drip campaigns, and automation to nurture customers and boost sales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-section">
+        <div class="container-custom">
+            <div style="text-align:center;max-width:48rem;margin:0 auto 4rem;">
+                <div class="fade-up section-badge emerald">
+                    <i data-lucide="route" style="width:16px;height:16px;"></i>
+                    How It Works
+                </div>
+                <h2 class="fade-up section-title">Start selling in 3 simple steps</h2>
+                <p class="fade-up section-desc">From product upload to first sale — it's never been easier to monetize your digital creations.</p>
+            </div>
+
+            <div class="how-grid">
+                <!-- Step 1 -->
+                <div class="fade-up" style="text-align:center;">
+                    <div class="step-number step1">1</div>
+                    <h3 class="step-title">Upload Your Product</h3>
+                    <p class="step-desc">Drag and drop your files — ebooks, courses, templates, SaaS keys, music, or any digital product. We host everything.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="fade-up" style="text-align:center;">
+                    <div class="step-number step2">2</div>
+                    <h3 class="step-title">Customize Your Store</h3>
+                    <p class="step-desc">Brand your checkout page, set pricing, create discount codes, and customize the purchase experience to match your brand.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="fade-up" style="text-align:center;">
+                    <div class="step-number step3">3</div>
+                    <h3 class="step-title">Start Earning</h3>
+                    <p class="step-desc">Share your product link anywhere. We handle checkout, delivery, and payments. You focus on creating and earning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container-custom">
+            <div style="text-align:center;max-width:48rem;margin:0 auto 4rem;">
+                <div class="fade-up section-badge purple">
+                    <i data-lucide="tag" style="width:16px;height:16px;"></i>
+                    Pricing
+                </div>
+                <h2 class="fade-up section-title">Simple, transparent pricing</h2>
+                <p class="fade-up section-desc">Start free, scale as you grow. No hidden fees, no surprises.</p>
+
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="fade-up pricing-card">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount price-monthly">$0</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+                    <p class="pricing-desc">Perfect for getting started</p>
+                    <a href="signup.html" class="pricing-cta outline">Get Started</a>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="pricing-check"></i>2GB cloud storage</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Up to 10 products</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Up to 5 images per product</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Max of 2 free custom store URLs</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Email delivery</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Platform branding on store</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Payout processing time: 72 hours</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>5% + 50¢ per sale</li>
+                    </ul>
+                </div>
+
+                <!-- Pro Plan (Popular) -->
+                <div class="fade-up pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-name">Basic</div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount price-monthly">$10</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+                    <p class="pricing-desc">For growing creators</p>
+                    <a href="signup.html" class="btn-shine pricing-cta solid">Start Free Trial</a>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="pricing-check"></i>8GB cloud storage</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Up to 25 products</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Up to 15 images per product</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Unlimited custom store URLs</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Custom store logo</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Custom subdomain (e.g. demo.lynqo.co)</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>No platform branding on store</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Payout processing time: 48 hours</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>3% + 30¢ per sale</li>
+                    </ul>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="fade-up pricing-card">
+                    <div class="pricing-name">Pro</div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount price-monthly">$23</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+                    <p class="pricing-desc">For established businesses</p>
+                    <a href="signup.html" class="pricing-cta outline">Start Free Trial</a>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="pricing-check"></i>Priority cloud storage up to 1TB</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Everything in pro</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Unlimited products</li>
+                        <li><i data-lucide="check" class="pricing-check"></i>Priority support</li>
+                        <!-- <li><i data-lucide="check" class="pricing-check"></i>Affiliate system</li> -->
+                        <li><i data-lucide="check" class="pricing-check"></i>2% + 20¢ per sale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container-custom">
+            <div style="text-align:center;max-width:48rem;margin:0 auto 4rem;">
+                <div class="fade-up section-badge amber">
+                    <i data-lucide="heart" style="width:16px;height:16px;"></i>
+                    Testimonials
+                </div>
+                <h2 class="fade-up section-title">Loved by creators worldwide</h2>
+                <p class="fade-up section-desc">Don't take our word for it — hear from the thousands of creators who trust Lynqo.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="fade-up testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                    </div>
+                    <p class="testimonial-text">"Lynqo completely transformed how I sell my design templates. I went from manually handling orders to fully automated delivery. My revenue doubled in the first month!"</p>
+                    <div class="testimonial-author">
+                        <img src="http://static.photos/people/200x200/10" class="testimonial-avatar" alt="">
+                        <div>
+                            <div class="testimonial-name">Olivia Martinez</div>
+                            <div class="testimonial-role">Designer & Creator</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="fade-up testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                    </div>
+                    <p class="testimonial-text">"The membership system is a game-changer for selling my tutorials. Setup took minutes, and the saves me hours every week. Can't imagine going back."</p>
+                    <div class="testimonial-author">
+                        <img src="http://static.photos/people/200x200/15" class="testimonial-avatar" alt="">
+                        <div>
+                            <div class="testimonial-name">James Chen</div>
+                            <div class="testimonial-role">Indie Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="fade-up testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                        <i data-lucide="star" style="width:16px;height:16px;color:#fbbf24;fill:#fbbf24;"></i>
+                    </div>
+                    <p class="testimonial-text">"I switched from Gumroad to Lynqo and never looked back. The analytics alone are worth it — I finally understand what's driving my sales and can optimize my funnels."</p>
+                    <div class="testimonial-author">
+                        <img src="http://static.photos/people/200x200/20" class="testimonial-avatar" alt="">
+                        <div>
+                            <div class="testimonial-name">Aisha Patel</div>
+                            <div class="testimonial-role">Course Creator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="container-custom">
+            <div class="fade-up cta-banner-card">
+                <div class="cta-decor-1"></div>
+                <div class="cta-decor-2"></div>
+
+                <div class="cta-content">
+                    <h2 class="cta-banner-title">Ready to start selling?</h2>
+                    <p class="cta-banner-desc">Join 12,000+ creators who are already earning with Lynqo. Free to start, no credit card required.</p>
+                    <div class="cta-banner-btns">
+                        <a href="signup.html" class="btn-shine cta-banner-primary">
+                            Create Your Store
+                            <i data-lucide="arrow-right" style="width:20px;height:20px;"></i>
+                        </a>
+                        <a href="#pricing" class="cta-banner-secondary">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <!-- <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg> -->
+                            <img src="img/icon1.png" alt="" width="30px">
+                        </div>
+                        <span class="footer-logo-text">Lynqo</span>
+                    </a>
+                    <p class="footer-brand-desc">The simplest way to sell digital products online. Built for creators, by creators.</p>
+                </div>
+                <!-- Product -->
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copy">© <span class="dynamic-year">2025</span> Lynqo. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i data-lucide="twitter" style="width:20px;height:20px;"></i></a>
+                    <a href="#"><i data-lucide="github" style="width:20px;height:20px;"></i></a>
+                    <a href="#"><i data-lucide="instagram" style="width:20px;height:20px;"></i></a>
+                    <a href="#"><i data-lucide="youtube" style="width:20px;height:20px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.dynamic-year').forEach(el => {
+        el.textContent = new Date().getFullYear();
+      });
+    });
+  </script>
+</body>
+</html>
