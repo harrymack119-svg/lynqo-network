@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Lynqo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body style="background:#f9fafb;">
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="logo-text">Lynqo</span>
+            </a>
+            <div class="desktop-nav">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#pricing">Pricing</a>
+            </div>
+            <div class="desktop-auth">
+                <a href="signin.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-cta">Get Started Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-custom py-16">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-gray-200 p-8 md:p-12 shadow-sm">
+            <div class="section-badge brand mb-4">
+                <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+                Terms of Service
+            </div>
+            <h1 class="section-title mb-6">Terms for using Lynqo</h1>
+            <p class="text-gray-600 leading-relaxed mb-8">
+                Welcome to Lynqo. These terms explain how you can use our platform and what you can expect from us when you sign up, sell products, or manage your storefront.
+            </p>
+
+            <div class="space-y-8">
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">1. Using the platform</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        You agree to use Lynqo in a lawful way and to keep your account information accurate and secure. You are responsible for the content you publish and the transactions you complete through the service.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">2. Account responsibility</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        If you create an account, you must protect your login details and notify us immediately if you suspect unauthorized access. We may suspend accounts that appear to violate our policies or abuse the platform.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">3. Payments and refunds</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Payments processed through Lynqo are subject to the pricing and payout rules described on the site. Refunds and chargebacks are handled according to the applicable payment provider and the policies posted in your dashboard.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">4. Content ownership</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        You retain ownership of your products and content unless you explicitly transfer rights to someone else. By posting content on Lynqo, you grant us permission to host, display, and process it as needed to provide the service.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">5. Contact us</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        If you have questions about these terms, please contact the Lynqo team through the support options available on the website.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <img src="img/icon1.png" alt="" width="30px">
+                        </div>
+                        <span class="footer-logo-text">Lynqo</span>
+                    </a>
+                    <p class="footer-brand-desc">The simplest way to sell digital products online. Built for creators, by creators.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="signup.html">Get Started</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© <span class="dynamic-year">2025</span> Lynqo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.dynamic-year').forEach(el => {
+                el.textContent = new Date().getFullYear();
+            });
+        });
+    </script>
+</body>
+</html>
