@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy | Lynqo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body style="background:#f9fafb;">
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/icon1.png" alt="" width="30px">
+                </div>
+                <span class="logo-text">Lynqo</span>
+            </a>
+            <div class="desktop-nav">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#pricing">Pricing</a>
+            </div>
+            <div class="desktop-auth">
+                <a href="signin.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-cta">Get Started Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-custom py-16">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-gray-200 p-8 md:p-12 shadow-sm">
+            <div class="section-badge brand mb-4">
+                <i data-lucide="refresh-cw" style="width:16px;height:16px;"></i>
+                Refund Policy
+            </div>
+            <h1 class="section-title mb-6">Refunds for digital products on Lynqo</h1>
+            <p class="text-gray-600 leading-relaxed mb-8">
+                This Refund Policy explains when customers may be eligible for a refund, the conditions for digital products, and how refunds are handled when different sellers use different policies.
+            </p>
+
+            <div class="space-y-8">
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">1. When refunds may be available</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Refunds may be available when a product is defective, not delivered as described, or otherwise fails to meet the seller’s published expectations. Customers should review the product details and seller information before purchasing.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">2. Digital products</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        For digital products, refunds are generally not available once access has been provided and the customer has downloaded or used the product, unless there is a clear issue such as a broken file, incorrect delivery, or a violation of the seller’s stated terms.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">3. Different seller policies</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Some sellers on Lynqo may set their own refund conditions. In those cases, the seller’s policy on the product page will apply, and customers should read it carefully before completing a purchase.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">4. How to request a refund</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        If you believe you are eligible for a refund, please contact the seller through the product page or reach out to Lynqo support with your order details so we can review the request.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <img src="img/icon1.png" alt="" width="30px">
+                        </div>
+                        <span class="footer-logo-text">Lynqo</span>
+                    </a>
+                    <p class="footer-brand-desc">The simplest way to sell digital products online. Built for creators, by creators.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="signup.html">Get Started</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© <span class="dynamic-year">2025</span> Lynqo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.dynamic-year').forEach(el => {
+                el.textContent = new Date().getFullYear();
+            });
+        });
+    </script>
+</body>
+</html>
